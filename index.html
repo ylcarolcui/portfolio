@@ -39,7 +39,13 @@
 				font-weight: 300;
 				font-family: 'Open Sans', sans-serif;
 			}
-
+      .name {
+        font-weight: 400;
+        font-size: 33px;
+      }
+.location {
+  font-size: 20px;
+}
 			p {
 				color: #4a4e69;
 				font-weight: 300;
@@ -167,19 +173,25 @@
 						width="200"
 						class="profile-pic"
 					/>
-					<h1>Carol Cui</h1>
-					<h3>New York, NY</h3>
+					<h1 class="name">Carol Cui</h1>
+					<h3 class="location">New York, NY</h3>
 					<h5>
 						I am a Software Engineer with an Accounting background. I am
 						passionate about building full stack web applications.
 					</h5>
 
 					<div class="text-center" style="margin: 20px;">
-						<a href="mailto:ylcarol1024@gmail.com" class="" target="_blank">
+						<!-- <a href="mailto:ylcarol1024@gmail.com" class="" target="_blank">
 							ylcarol1024@gmail.com
-						</a>
+						</a> -->
 					</div>
 					<div class="social-media">
+						<a href="mailto: ylcarol1024@gmail.com" target="_blank"
+							><img
+								src="https://i.imgur.com/JqGsQpN.jpg"
+								alt="email"
+								class="logo-image"
+						/></a>
 						<a href="https://www.linkedin.com/in/ylcarolcui/" target="_blank"
 							><img
 								src="https://i.imgur.com/eHdu89E.png"
@@ -202,7 +214,7 @@
 						<div class="row vertical-align">
 							<div class="col-xs-12 col-md-8">
 								<img
-									src="https://i.imgur.com/qdqPNKH.png"
+									src="/image/Zoo Doc.png"
 									class="img-responsive work-item-img center-block"
 								/>
 							</div>
@@ -216,8 +228,17 @@
 								<p>
 									ZooDoc is a website that allows users to find and rate
 									veterinarians in their metro areas. Users may create accounts,
-									log in, and read, rate, update, and delete vet reviews. Users
-									must be authenticated to perform any action other than read.
+									log in, read, rate, update, and delete vet reviews.
+								</p>
+								<p>
+									It's a full stack application with CRUD functionality for
+									veterinarian reviews. The frontend was built with ReactJS Framework
+									and the backend was built with Django REST Framework with
+									PostgreSQL database.
+								</p>
+								<p>
+									Technologies used: HTML, CSS, JavaScript, React, Django,
+									Bootstrap, Python, SQL
 								</p>
 							</div>
 						</div>
@@ -237,13 +258,13 @@
 								class="btn btn-launch"
 								href="https://github.com/ylcarolcui/ZooDoc"
 								target="blank"
-								>View on GitHub</a
+								>View Frontend work</a
 							>
 							<a
 								class="btn btn-launch"
 								href="https://github.com/ylcarolcui/ZooDoc-Backend"
 								target="blank"
-								>View backend work</a
+								>View Backend work</a
 							>
 						</div>
 					</div>
@@ -253,7 +274,7 @@
 						<div class="row vertical-align">
 							<div class="col-xs-12 col-md-8 col-md-push-4">
 								<img
-									src="https://i.imgur.com/Yo1D7EV.png"
+									src="/image/Food Chat.png"
 									class="img-responsive work-item-img center-block"
 								/>
 							</div>
@@ -265,12 +286,14 @@
 								</h2>
 
 								<p>
-									FoodChat is a fully responsive application that allows users
-									to create posts on the best or worst dish at the top 10
-									restaurants in Los Angeles, New York, and Austin. Users are
-									able to post a dish, their description of that dish, and
-									whether or not they would revisit the restaurant. FoodChat
-									also allows users to delete and edit posts.
+									Food Chat is a MERN stack application with full-CRUD
+									functionality that allows the user to read, create, update and
+									delete reviews of dishes from restaurants in Los Angeles, New
+									York, and Austin.
+								</p>
+								<p>
+									The project was built with HTML5, CSS, JavaScript, React,
+									Bootstrap, Express, MongoDB
 								</p>
 							</div>
 						</div>
@@ -291,13 +314,13 @@
 								class="btn btn-launch"
 								href="https://github.com/ylcarolcui/Project-3-Front-End"
 								target="blank"
-								>View on GitHub</a
+								>View Frontend work</a
 							>
 							<a
 								class="btn btn-launch"
 								href="https://github.com/ylcarolcui/Food-Chat-Backend"
 								target="blank"
-								>View backend work</a
+								>View Backend work</a
 							>
 						</div>
 					</div>
@@ -307,7 +330,7 @@
 						<div class="row vertical-align">
 							<div class="col-xs-12 col-md-8">
 								<img
-									src="https://i.imgur.com/pbHy2V3.png"
+									src="/image/Easy Cooking Recipes.png"
 									class="img-responsive work-item-img center-block"
 								/>
 							</div>
@@ -322,12 +345,13 @@
 
 								<p>
 									Easy Cooking Recipe helps user to find recipes with dynamic
-									categories. User can find recipes by type in the searching bar
-									and click search button. Users will see 20 different recipes
-									for each categories and once one of the food is clicked, the
-									ingredient for specific food will show on the page. User can
-									always click a link for more detailed information of selected
-									food.
+									categories. I used ReactJS framework to render dynamic
+									component and utilized API from
+									<a href="https://developer.edamam.com/" target="blank"
+										>EDAMAM</a
+									>
+									to retrieve database of recipes. The project was built with
+									HTML5, CSS, Javascript, React.
 								</p>
 							</div>
 						</div>
@@ -354,7 +378,7 @@
 						<div class="row vertical-align">
 							<div class="col-xs-12 col-md-8 col-md-push-4">
 								<img
-									src="https://i.imgur.com/zVTliQz.png"
+									src="/image/Disney Trivia.png"
 									class="img-responsive work-item-img center-block"
 								/>
 							</div>
@@ -368,9 +392,13 @@
 								</h2>
 
 								<p>
-									Disney Trivia has 10 disney related questions. Player will get 10 points if
-									answered right, otherwise no point will be applied to the
-									score board.
+									Disney Trivia has 10 disney related questions. Player will get
+									10 points if answered right, otherwise no point will be
+									applied to the score board.
+								</p>
+								<p>
+									It is frontend-only project was built with HTML5, CSS and
+									vanilla JavaScript.
 								</p>
 							</div>
 						</div>
@@ -399,9 +427,8 @@
 						<h3 style="margin: 50px 0 15px;">
 							I'm available for work, get in touch
 						</h3>
-						<a href="mailto:ylcarol1024@gmail.com" class="" target="_blank">
-							ylcarol1024@gmail.com
-						</a>
+              <a href="mailto: ylcarol1024@gmail.com" target="_blank"><img src="https://i.imgur.com/JqGsQpN.jpg" alt="email"
+                  class="logo-image" /></a>
 					</div>
 				</div>
 			</div>
